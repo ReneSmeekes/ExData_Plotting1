@@ -24,9 +24,8 @@ pcn$Date <- as.Date(pcn$Date,format="%d/%m/%Y")
 
 
 ## creating plot
-
-png("plot1.png")
-hist(pcn$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="Red")
+png("plot2.png")
+plot(pcn$Time, pcn$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
 
 ## reset wd to what it originally was
